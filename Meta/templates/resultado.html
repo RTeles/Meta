@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel ="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado da Análise</h1>
+        <!-- a tag P é utilizada para escrever paragrafos e informacoes maiores, sem configuração de titulo-->
+         <!-- negrito a palavra -->
+        <p><strong>Funcionário: {{nome}}</strong></p>
+        <p><b>Meta</b>{{'Batida' if meta_batida else 'Não atingida'}}</p>
+        <p><b>Bônus</b>R${{bonus}}</p>
+
+        <a class="botao-secundario" href="/">Home</a>
+
+    </div>
+</body>
+</html>

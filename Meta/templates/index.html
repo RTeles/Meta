@@ -1,0 +1,45 @@
+<!--Linha de Comentário-->
+<!--Declara que o conteúdo/ ou tipo de documento é o html5-->
+<!DOCTYPE html> 
+<!--Início do docuemnto html, o atributo lang indica o idioma do conteúdo da página web-->
+<html lang="pt-br">
+<head><!--Contém as configurações e links-->
+    <meta charset="UTF-8"><!--Dá suporte aos caracteres especiais do idioma-->
+    <!--Dá o suporte inicial para a responsividade, adotando uma largura padrão e uma escala de visiualização-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---->    
+    <title>Cadastro das Vendas</title>
+
+   <link rel ="stylesheet" href="static/style.css">
+</head>
+<body><!--Início de fato do conteúdo visível ao usuário-->
+    <!--Caixa organizadora-->
+    <div class="container">
+        <!--Título Principal da página-->
+        <h1>Registrar Funcionário</h1>
+        <!--Criando a estrutura de um formulário-->
+        <!--Atributos basicamente indicam para onde as informações irão e como elas serão enviadas-->
+        <form action="/salvar" method="POST">
+            <!--Criação de uma cx de texto para receber informações
+            type: o tipo de informação que será inserida
+            name:faz referência para  avariável que receberá a informação
+            placeholder:Dica do que digitar
+            required:Garantir o item como campo obrigatório.
+            -->
+            <input type="text" name="nome" placeholder="Nome do Funcionário" required><br>
+            <!--Step permite a inserção de nº com casas decimais-->
+            <input type="number" name="vendas" step="0.01" placeholder="Total de Vendas" required>
+            <input type="number" name="meta" step="0.01" placeholder="Meta" required>
+            <!--Criando a estrutura eum botão 
+            type=submit indica que estão enviando os dados do formulário para um lugar (servidor)
+            -->
+            <button type="submit">Salvar</button>
+        </form>
+        <!--Criando um link, imitando botão-->
+        <!--href ele deve conter a referência da página web que quero abrir-->
+        <a class="botao-secundario" href="/historico">Ver Históricos</a>
+
+    </div>
+    
+</body>
+</html>

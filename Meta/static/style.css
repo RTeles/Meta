@@ -1,0 +1,83 @@
+body {
+    /* Definindo o tipo da letra para fonte */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*Definindo um fundo para a pagina*/
+    background: rgb(80, 112, 117);
+    /*Colocamos a imagem como fundo da tela */
+    background-image: url("funcionario.jpg");
+    /*Faz com que a imagem ocupe a porcentagem da tela */
+    background-size: 100%;
+
+}
+/*Estilizando a div pela classe */
+.container {
+    /* Definir uma largura maxima p/ a nossa div */
+    max-width: 500px;
+    /* Add 40px de distancia de margem vertical e centraliza automaticamente a horizontal */
+    margin: 50px auto;
+    padding: 30px; /*Add um espaço interno ao redor do conteudo da div */
+    /*fundo na div */
+    background: rgb(206, 205, 205);
+    border-radius: 12px;
+    box-shadow:0 4px 10px rgba(11, 15, 74, 1);
+}
+h1 {
+    /*alinhamento do texto */
+    text-align: center;
+    /*cor do texto */
+    color: rgb(32, 89, 133)
+}
+form {
+    display: flex;
+    flex-direction: column; /*organiza os elementos um em baixo do outro como uma coluna */
+}
+input, button{
+    margin: 10px; /*margem superior entre os elementos */
+    padding: 10px; /*espaçamento interno entre o conteudo e a borda do elemento */
+    font-size: 16px; /*tamanho da fonte (letra) */
+
+}
+button, .botao-secundario {
+    /*trocar a cor de fundo */
+    background-color: rgba(24, 64, 104, 0.529);
+    /*trocar a cor da fonte */
+    color:rgba(4, 4, 4, 0.837);
+    /*deixar os cantos arredondados */
+    border-radius: 8px;
+    /*alinhamento do texto */
+    text-align: center;
+    /*retirar a borda padrão */
+    border: none;
+    /*colocar maozinha no lugar da seta (cursor) */
+    cursor: pointer;
+    /*remove o sublinhado de links (o botao secundario é a nossa tag a, um lin funcionando como um botao) */
+    text-decoration: none;
+
+}
+button:hover, .botao-secundario:hover {
+    background-color: rgba(34, 45, 85, 0.648);
+    font-size: 17px;
+}
+/*desafio: deixar o design da tag a igual a do botao */
+.botao-secundario {
+    display: flex; /*permite que o botao se comporte como um elemento inline, mas tendo os controles de dimensão */
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px; /*espaçamento entre o conteudo e a borda */
+    font-size: 16px;
+
+}
+table {
+    width: 100%; /*ocupará 100% da largura disponivel */
+    border-collapse: collapse; /*retira o espaçamento entre as celulas da tabela */
+    margin-top: 20px; /*add margem superior */
+
+}
+table, th, td {
+    /*aplica uma borda cinza a tabela, cabeçalho e células */
+    border: 1px solid grey;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
